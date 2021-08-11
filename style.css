@@ -1,0 +1,91 @@
+nav {
+  width: 960px;
+  margin: 0 auto;
+}
+nav::before {
+  content: none;
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+.menu-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 50px;
+}
+.menu-ul li {
+  float: left;
+}
+.menu-ul li a {
+  color: white;
+  display: block;
+  height: 50px;
+  padding: 0 30px;
+  text-decoration: none;
+  line-height: 50px;
+  box-shadow: none;
+}
+.menu-ul li a:hover {
+  background-color: red;
+  transition-duration: 1s;
+  box-shadow: black;
+}
+body {
+  color: white;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.row {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .row {
+  height: 1%;
+}
+.row {
+  display: block;
+}
+/* close commented backslash hack */
+
+.header {
+  margin-bottom: 10px;
+}
+.inner-header {
+  background-image: url(./images/ACRE-Ceramics.jpg);
+  height: 200px;
+}
+.content {
+  width: 70%;
+  float: left;
+}
+.inner-content {
+  background-color: salmon;
+  min-height: 500px;
+}
+.sidebar {
+  width: 100%;
+}
+.inner-sidebar {
+  background-color: seagreen;
+  float: right;
+}
+.footer {
+  margin-top: 10px;
+}
+.inner-footer {
+  background-color: teal;
+  height: 200px;
+}
